@@ -4,7 +4,7 @@ GEOSmam:
   extends:
     GEOSgcm:
       tag: v11.7.0
-      remote: ../GEOSgcm.git
+      remote: git@github.com:GEOS-ESM/GEOSgcm.git
 
 extensions:
   MAM:
