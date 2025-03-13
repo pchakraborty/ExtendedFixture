@@ -1,0 +1,22 @@
+GEOSmam:
+  fixture: true
+  develop: main
+  extends:
+    GEOSgcm:
+      tag: v11.7.0
+      remote: ../GEOSgcm.git
+
+extensions:
+  MAM:
+    local: ./src/Components/@GEOSgcm_GridComp/.../@GEOSchem_GridComp/@MAM
+    remote: ../MAM.git
+    tag: v1.0.0
+    develop: develop
+
+overrides:
+  GEOSgcm_GridComp:
+    local: ./src/Components/@GEOSgcm_GridComp
+    remote: ../GEOSgcm_GridComp.git
+    tag: v2.7.2
+    sparse: ./config/GEOSgcm_GridComp.sparse
+    develop: develop
